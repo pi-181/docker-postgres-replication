@@ -9,7 +9,7 @@ echo "*:*:*:$PG_REP_USER:$PG_REP_PASSWORD" > ~/.pgpass
         echo "Waiting for master to ping..."
         sleep 1s
     done
-    until pg_basebackup -h ${PG_MASTER_HOST} -D ${PGDATA} -U ${PG_REP_USER} -vP -W -Fp -Xs -P -R
+    until pg_basebackup -h ${PG_MASTER_HOST} -D ${PGDATA} -U ${PG_REP_USER} -vP -W
     do
         echo "Waiting for master to connect..."
         sleep 1s

@@ -17,5 +17,3 @@ hot_standby = on
 max_connections = 300
 shared_buffers = 80MB
 EOF
-
-# wal_keep_size = 128
