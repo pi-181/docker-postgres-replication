@@ -1,4 +1,4 @@
-FROM postgres:12.5-alpine
+FROM postgres:13.2-alpine
 
 RUN apk add --update htop
 
