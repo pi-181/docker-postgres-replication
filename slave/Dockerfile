@@ -1,4 +1,4 @@
-FROM postgres:9.6-alpine
+FROM postgres:12.5-alpine
 
 ENV GOSU_VERSION 1.12
 
